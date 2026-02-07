@@ -762,14 +762,14 @@
           <p class="section-subtitle">Want to work together or ask a question?</p>
           <h6 class="section-title mb-5">Send me a message</h6>
           <!-- contact form -->
-          <form id="contactForm" class="contact-form col-md-10 col-lg-8 m-auto">
+          <form id="contactForm" class="contact-form col-md-10 col-lg-8 m-auto" action="https://formsubmit.co/richard@rjmartin.co.uk" method="POST" >
               <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="nameInput" placeholder="Your Name" required />
+                  <input type="text" class="form-control" id="nameInput" name="nameInput" placeholder="Your Name" required />
                   <label for="nameInput">Your Name</label>
                   <div class="invalid-feedback">Please enter your Name.</div>
               </div>
               <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="emailInput" placeholder="name@example.com" required />
+                  <input type="email" class="form-control" id="emailInput" name="emailInput" placeholder="name@example.com" required />
                   <label for="emailInput">Email address</label>
                   <div class="invalid-feedback">Please enter a valid email address.</div>
               </div>
@@ -782,7 +782,7 @@
 
 
               <div class="form-group col-sm-12 mt-3">
-                  <button class="btn btn-outline-primary rounded g-recaptcha btnAction" data-sitekey="6LfpDpUpAAAAAJU1TUrCB6VM6CHmqmjFv7YTbArv" data-callback="sendContact" name="submit">Send Message</button>
+                  <button class="btn btn-outline-primary rounded g-recaptcha btnAction" data-sitekey="6LfpDpUpAAAAAJU1TUrCB6VM6CHmqmjFv7YTbArv" data-callback="sendContact" name="submit" type="submit">Send Message</button>
 
               </div>
               <div id="mail-status"></div>
